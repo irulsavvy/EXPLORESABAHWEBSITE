@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPLORESABAH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EXPLORESABAH</h1>
+        <nav>
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Place</button>
+                <div class="dropdown-content">
+                    <a href="gunungkinabalu.html">Gunung Kinabalu</a>
+                    <a href="pulausipadan.html">Pulau Sipadan</a>
+                    <a href="pulaumabul.html">Pulau Mabul</a>
+                    <a href="kundasanggg.html">Kundasang</a>
+                    <a href="rafflesia.html">Rafflesia</a>
+                    <a href="tanjungaru.html">Tanjung Aru</a>
+                </div>
+            </div>
+
+            <a href="aboutus.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Food & Cuisine.html">Food</a>
+            <a href="traveltip.html">Tips</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="rafflesia/vid.mp4" type="video/mp4">
+        </video>
+        <h2>RAFFLESIA</h2>
+    </section>
+
+
+    <section class="featured">
+        <center>
+            <h2>FLOWER OF DEATH</h2>
+        </center>
+    </section>
+    <section class="sipadan-sections">
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="rafflesia/1.jpg" alt="Kundasang" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            The Rafflesia is one of the world’s most fascinating and rare flowers, found mainly in
+                            Southeast Asia, including parts of Sabah, Malaysia. Known for producing the largest
+                            individual flower on Earth, the Rafflesia can grow up to 1 meter in diameter and weigh over
+                            10 kilograms. What makes it even more unique is that it has no leaves, stems, or roots — it
+                            is a parasitic plant that relies entirely on a host vine (usually from the Tetrastigma
+                            species) to grow and survive.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card reverse">
+                    <div class="image">
+                        <img src="rafflesia/2.jpg" alt="Kundasang" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            In Sabah, the Rafflesia can be spotted in conservation areas like the Rafflesia Information
+                            Centre in Tambunan, and sometimes in the forests near Kundasang or Poring Hot Springs.
+                            However, seeing one in bloom is rare, as each flower takes months to grow but only blooms
+                            for 3 to 5 days before it starts to rot. When it blooms, it emits a strong odor similar to
+                            rotting meat, earning it the nickname “corpse flower.” This scent attracts flies and other
+                            insects which help pollinate the plant.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="rafflesia/3.jpg" alt="Kundasang" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            The Rafflesia is a protected species due to its vulnerability and limited blooming period.
+                            Deforestation, habitat disturbance, and illegal collection have further threatened its
+                            survival. Conservation efforts in Sabah aim to raise awareness and preserve this botanical
+                            wonder by educating visitors and supporting sustainable eco-tourism. For those lucky enough
+                            to witness it in bloom, the Rafflesia is not just a flower — it’s a rare and unforgettable
+                            encounter with one of nature’s strangest masterpieces.
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Popup image">
+    </div>
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+            <div class="slide-wrapper" id="slideWrapper">
+                <div class="slide"><img src="rafflesia/1.jpg"></div>
+                <div class="slide"><img src="rafflesia/2.jpg"></div>
+                <div class="slide"><img src="rafflesia/3.jpg"></div>
+            </div>
+
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            document.getElementById('slideWrapper').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+    <div class="info-box">
+        <p>
+            The Rafflesia is a rare and remarkable parasitic flower found in the rainforests of Southeast Asia,
+            especially in Sabah, Malaysia. Known for producing the world’s largest individual bloom, it emits a strong
+            odor of rotting flesh to attract pollinators, earning it the nickname "corpse flower." The plant lacks
+            leaves, stems, and roots, surviving entirely on a host vine. Due to its brief blooming period and
+            environmental threats, the Rafflesia is now a protected species. Conservation efforts in Sabah help preserve
+            this botanical wonder and promote eco-tourism through education and awareness.
+        </p>
+    </div>
+    <div class="intro-page">
+        <a href="https://maps.app.goo.gl/ZcmVjPRUzUCwyzrK7" class="start-btn" target="_blank" rel="noopener noreferrer">
+            GO TO MAP
+        </a>
+    </div>
+
+    <footer>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; gap: 10px;">
+                <img src="home/SABAH FLAG.png" height="40" width="70">
+            </div>
+            <p style="flex: 1; text-align: center;">&copy; 2025 EXPLORESABAH. All rights reserved.</p>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

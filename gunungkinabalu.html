@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPLORESABAH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EXPLORESABAH</h1>
+        <nav>
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Place</button>
+                <div class="dropdown-content">
+                    <a href="gunungkinabalu.html">Gunung Kinabalu</a>
+                    <a href="pulausipadan.html">Pulau Sipadan</a>
+                    <a href="pulaumabul.html">Pulau Mabul</a>
+                    <a href="kundasanggg.html">Kundasang</a>
+                    <a href="rafflesia.html">Rafflesia</a>
+                    <a href="tanjungaru.html">Tanjung Aru</a>
+                </div>
+            </div>
+
+            <a href="aboutus.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Food & Cuisine.html">Food</a>
+            <a href="traveltip.html">Tips</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="gk/vid.mp4" type="video/mp4">
+
+
+        </video>
+        <h2>GUNUNG KINABALU</h2>
+    </section>
+
+
+    <section class="featured">
+        <center>
+            <h2>FEEL THE WIND</h2>
+        </center>
+    </section>
+    <section class="sipadan-sections">
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="gk/e.jpg" alt="Gunung Kinabalu" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Mount Kinabalu is not only the iconic landmark of Sabah, but also a symbol of culture,
+                            history,
+                            and unmatched natural beauty. As one of the tallest mountains in Southeast Asia, it is more
+                            than
+                            just a tourist destination — it is a place rich with legends and local beliefs. In this
+                            article, we will
+                            explore the myths, historical background, and cultural significance of this majestic
+                            mountain in Sabah.<br><br>
+
+                            The name “Kinabalu” is believed to come from the Dusun language — combining “Aki” meaning
+                            ancestor or spirit,
+                            and “Nabalu” meaning mountain. Therefore, “Akinabalu” can be interpreted as the Mountain of
+                            the Spirits of
+                            the Ancestors. This reflects the local belief that Mount Kinabalu is a resting place for the
+                            souls of the
+                            departed.<br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card reverse">
+                    <div class="image">
+                        <img src="gk/f.jpg" alt="Gunung Kinabalu" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            One of the most well-known legends tells the story of a Chinese princess who waited
+                            faithfully for her lover,
+                            a local warrior, to return from a sea voyage. Unfortunately, he never came back. The
+                            princess waited atop the
+                            mountain until her death, and her spirit is said to still dwell on the mountain. This
+                            romantic and tragic
+                            tale adds a mystical element to Mount Kinabalu.
+
+                            For the Kadazan-Dusun people, Mount Kinabalu is considered sacred. Every year, before major
+                            climbing expeditions,
+                            a ritual known as monolob is performed by a bobolian (a traditional priest or shaman). This
+                            ceremony involves the
+                            sacrifice of a chicken and prayers in an ancient dialect, seeking permission and protection
+                            from the mountain spirits.
+
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="gk/c.jpg" alt="Gunung Kinabalu" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Mount Kinabalu was first documented in modern history by Hugh Low, a British administrator
+                            who
+                            climbed the mountain in 1851. The summit route he took is now known as “Low’s Peak” in his
+                            honor.
+                            Since then, the mountain has attracted climbers, adventurers, and researchers from around
+                            the world.
+
+                            Mount Kinabalu is now part of Kinabalu National Park, which was declared a UNESCO World
+                            Heritage Site
+                            in 2000. It is home to more than 5,000 species of plants, including the world’s largest
+                            flower — the Rafflesia.
+                            The mountain also plays a major role in Sabah’s economy through eco-tourism and biological
+                            research.
+
+                            Mount Kinabalu is more than just a towering peak — it is a symbol of Sabah’s rich cultural
+                            heritage and
+                            spiritual beliefs. From mythical tales of undying love to sacred rituals passed down through
+                            generations,
+                            the mountain holds countless stories that connect people, nature, and the unseen world. It
+                            remains a place of
+                            adventure, respect, and deep reflection.
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Popup image">
+    </div>
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+            <div class="slide-wrapper" id="slideWrapper">
+                <div class="slide"><img src="gk/a.jpg" alt="Resort"></div>
+                <div class="slide"><img src="gk/b.jpg" alt="Snorkeling"></div>
+                <div class="slide"><img src="gk/d.jpg" alt="Diving"></div>
+            </div>
+
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            document.getElementById('slideWrapper').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+    <div class="info-box">
+        <p>
+            Gunung Kinabalu is the highest mountain in Malaysia and one of the tallest in Southeast Asia, standing
+            proudly at 4,095 meters (13,435 feet) above sea level. Located in the Malaysian state of Sabah on the island
+            of Borneo, the mountain is the crown jewel of Kinabalu Park, which was designated Malaysia’s first UNESCO
+            World Heritage Site in 2000. Its breathtaking presence dominates the landscape and symbolizes the natural
+            beauty of Sabah.
+        </p>
+    </div>
+
+
+    <div class="intro-page">
+        <a href="https://maps.app.goo.gl/Mcpjg6wgHUtPLVN97" class="start-btn" target="_blank" rel="noopener noreferrer">
+            GO TO MAP
+        </a>
+    </div>
+
+
+
+    <footer>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; gap: 10px;">
+                <img src="home/SABAH FLAG.png" height="40" width="70">
+            </div>
+            <p style="flex: 1; text-align: center;">&copy; 2025 EXPLORESABAH. All rights reserved.</p>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

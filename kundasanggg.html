@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPLORESABAH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EXPLORESABAH</h1>
+        <nav>
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Place</button>
+                <div class="dropdown-content">
+                    <a href="gunungkinabalu.html">Gunung Kinabalu</a>
+                    <a href="pulausipadan.html">Pulau Sipadan</a>
+                    <a href="pulaumabul.html">Pulau Mabul</a>
+                    <a href="kundasanggg.html">Kundasang</a>
+                    <a href="rafflesia.html">Rafflesia</a>
+                    <a href="tanjungaru.html">Tanjung Aru</a>
+                </div>
+            </div>
+
+            <a href="aboutus.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Food & Cuisine.html">Food</a>
+            <a href="traveltip.html">Tips</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="kundasang/vid.mp4" type="video/mp4">
+
+
+        </video>
+        <h2>KUNDASANG</h2>
+    </section>
+
+
+    <section class="featured">
+        <center>
+            <h2>RELAX YOUR MIND</h2>
+        </center>
+    </section>
+    <section class="sipadan-sections">
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="kundasang/1.jpg" alt="Kundasang" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Kundasang is a small town located in the district of Ranau, Sabah, Malaysia. Situated at an
+                            altitude of over 1,900
+                            meters above sea level, it is a highland destination known for its cool weather,
+                            breathtaking views of Mount Kinabalu,
+                            and peaceful atmosphere far from the hustle and bustle of city life.
+                            Located just about 6 km from Kinabalu National Park, Kundasang serves as a popular stopover
+                            for tourists who want
+                            to admire or climb the iconic Mount Kinabalu. Its natural beauty, lush green landscape, and
+                            rural charm make it one of
+                            the most beloved travel spots in Sabah.
+                            <br><br>
+
+                            Kundasang is an ideal getaway for anyone seeking fresh mountain air, stunning natural
+                            landscapes, and a slower pace
+                            of life. With its breathtaking views, cultural richness, and unique attractions, Kundasang
+                            stands out as one of the
+                            most beautiful and peaceful travel destinations in Sabah and Malaysia as a whole.
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card reverse">
+                    <div class="image">
+                        <img src="kundasang/2.jpg" alt="Kundasang" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Desa Dairy Farm terletak di Kundasang, Sabah dan dikenali sebagai “New Zealand versi
+                            Malaysia” kerana cuaca sejuk dan
+                            pemandangan indah berlatarbelakangkan Gunung Kinabalu. Ia merupakan ladang tenusu moden yang
+                            menempatkan lembu baka
+                            Friesian-Holstein dari New Zealand.
+                            Pengunjung boleh melihat proses pemerahan susu, memberi makan haiwan, serta mencuba produk
+                            tenusu segar seperti susu
+                            pelbagai perisa, yogurt dan ais krim. Ladang ini sesuai untuk lawatan keluarga, pelajar dan
+                            pelancong yang ingin
+                            menikmati suasana tanah tinggi yang nyaman.
+                            Terletak hanya beberapa kilometer dari pekan Kundasang, Desa Dairy Farm merupakan salah satu
+                            tarikan utama dalam
+                            sektor agro-pelancongan Sabah dan destinasi wajib singgah bagi pengunjung ke kawasan ini.
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="kundasang/3.jpg" alt="Kundasang" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Sosodikon Hill is a small hill located near Desa Dairy Farm in Kundasang, Sabah. It offers
+                            an easy 10–15 minute hike,
+                            making it suitable for all ages. From the top, visitors can enjoy stunning 360-degree views,
+                            including Mount Kinabalu,
+                            Kundasang Valley, and surrounding farmlands.
+                            The hill is a popular sunrise spot, with a wooden viewing platform perfect for photography.
+                            The best time to visit is
+                            before 8 AM to avoid cloud cover. A small entrance fee is charged (RM5 for local adults),
+                            and basic facilities like
+                            parking are available nearby.
+                            With its calm atmosphere, scenic views, and easy access, Sosodikon Hill is a must-visit
+                            destination for nature lovers
+                            and casual hikers exploring Kundasang.
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Popup image">
+    </div>
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+            <div class="slide-wrapper" id="slideWrapper">
+                <div class="slide"><img src="kundasang/4.jpg" alt="Resort"></div>
+                <div class="slide"><img src="kundasang/5.jpg" alt="Snorkeling"></div>
+                <div class="slide"><img src="kundasang/6.jpg" alt="Diving"></div>
+            </div>
+
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            document.getElementById('slideWrapper').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+    <div class="info-box">
+        <p>
+            Kundasang is a serene highland town located in the district of Ranau, Sabah, Malaysia. Nestled at the
+            foothills of Mount Kinabalu, it is renowned for its cool climate, stunning natural landscapes, and panoramic
+            views of the surrounding mountains and valleys. Often referred to as the “New Zealand of Borneo,” Kundasang
+            attracts nature lovers, photographers, and travelers seeking a peaceful escape from city life. Its rolling
+            green hills, vegetable farms, and charming homestays offer a unique rural experience set against the
+            dramatic backdrop of Southeast Asia's tallest peak.
+
+            Aside from its scenic beauty, Kundasang holds historical and cultural significance. It is home to the
+            Kundasang War Memorial, built to honor the Australian and British prisoners of war who died during the
+            Sandakan Death Marches in World War II. The town is also close to Kinabalu Park, a UNESCO World Heritage
+            Site, making it a popular base for climbers and eco-tourists. With its mix of natural charm, historical
+            depth, and local hospitality, Kundasang continues to be a must-visit gem in Sabah’s travel landscape.
+        </p>
+    </div>
+    <div class="intro-page">
+        <a href="https://maps.app.goo.gl/fkwtMM4Q2NDY94My7" class="start-btn" target="_blank" rel="noopener noreferrer">
+            GO TO MAP
+        </a>
+    </div>
+    <footer>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; gap: 10px;">
+                <img src="home/SABAH FLAG.png" height="40" width="70">
+            </div>
+            <p style="flex: 1; text-align: center;">&copy; 2025 EXPLORESABAH. All rights reserved.</p>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

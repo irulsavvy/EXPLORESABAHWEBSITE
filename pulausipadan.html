@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPLORESABAH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EXPLORESABAH</h1>
+        <nav>
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Place</button>
+                <div class="dropdown-content">
+                    <a href="gunungkinabalu.html">Gunung Kinabalu</a>
+                    <a href="pulausipadan.html">Pulau Sipadan</a>
+                    <a href="pulaumabul.html">Pulau Mabul</a>
+                    <a href="kundasanggg.html">Kundasang</a>
+                    <a href="rafflesia.html">Rafflesia</a>
+                    <a href="tanjungaru.html">Tanjung Aru</a>
+                </div>
+            </div>
+
+            <a href="aboutus.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Food & Cuisine.html">Food</a>
+            <a href="traveltip.html">Tips</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="pulausipadann/pulausipadan video.mp4" type="video/mp4" />
+        </video>
+        <h2>PULAU SIPADAN</h2>
+    </section>
+
+
+    <section class="featured">
+        <center>
+            <h2>FEEL THE WATER</h2>
+        </center>
+    </section>
+
+
+    <section class="sipadan-sections">
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="pulausipadann/RESORT.jpg" alt="Pulau Sipadan Resort"
+                            onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Far from the noise of cities and tucked deep within the Celebes Sea, there lies a small
+                            piece of paradise — Pulau Sipadan Resort. It’s not just a place to stay. It’s where dreams
+                            drift with the tide, and nature speaks in colors too vivid for words.<br><br>
+                            Built over the gentle waves, this resort sits just a boat ride away from the legendary
+                            Sipadan Island — one of the world’s top diving destinations. Here, mornings begin with
+                            golden sunrises over glassy waters, and days are filled with unforgettable adventures
+                            beneath the surface.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card reverse">
+                    <div class="image">
+                        <img src="pulausipadann/SNORKELING.jpg" alt="Snorkeling at Sipadan"
+                            onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Drifting gently above a kaleidoscope of coral, snorkeling at Pulau Sipadan feels like
+                            entering another world. As your face dips beneath the surface, you're greeted by a bustling
+                            city of life — reef fish darting between anemones, giant clams pulsing with color, and sea
+                            turtles gliding peacefully below.<br><br>
+                            Unlike many places, Pulau Sipadan’s reefs are not just alive — they are thriving. Floating
+                            there, surrounded by nature’s masterpiece, time seems to pause. It’s not just snorkeling —
+                            it’s an unforgettable connection to one of the richest marine ecosystems on Earth.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="pulausipadann/DIVING.jpg" alt="Diving at Sipadan" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Descending into the turquoise depths of Pulau Sipadan is like entering a secret cathedral of
+                            the sea. The world above fades as you glide past dramatic drop-offs, where the reef wall
+                            plunges into an endless blue.<br><br>
+                            Pulau Sipadan is more than a dive site — it's an underwater sanctuary untouched by time.
+                            With visibility often exceeding 30 meters and currents that carry you effortlessly, diving
+                            at Sipadan is a surreal, meditative experience that leaves a mark on your soul.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Popup image">
+    </div>
+
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slide-wrapper" id="slideWrapper">
+                <div class="slide"><img src="pulausipadann/RESORT.jpg" alt="Resort"></div>
+                <div class="slide"><img src="pulausipadann/SNORKELING.jpg" alt="Snorkeling"></div>
+                <div class="slide"><img src="pulausipadann/DIVING.jpg" alt="Diving"></div>
+            </div>
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <div class="info-box">
+        <p>
+            Pulau Sipadan is a small oceanic island located in the Celebes Sea, off the east coast of Sabah, Malaysia.
+            It lies about 600 meters from the ocean floor, making it the only oceanic island in Malaysia formed by
+            living corals growing on top of an extinct volcanic cone. Despite its small landmass, Sipadan has become one
+            of the top dive destinations in the world, attracting marine enthusiasts and professional divers from around
+            the globe.
+        </p>
+    </div>
+
+    <div class="intro-page">
+        <a href="https://www.bing.com/maps?&ty=30&q=PULAU%20SIPADAN%20MAP&cp=4.114701~118.623376&lvl=16"
+            class="start-btn" target="_blank" rel="noopener noreferrer">
+            GO TO MAP
+        </a>
+    </div>
+
+
+    <footer>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; gap: 10px;">
+                <img src="home/SABAH FLAG.png" height="40" width="70">
+            </div>
+            <p style="flex: 1; text-align: center;">&copy; 2025 EXPLORESABAH. All rights reserved.</p>
+            <div></div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            document.getElementById('slideWrapper').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+</body>
+
+</html>

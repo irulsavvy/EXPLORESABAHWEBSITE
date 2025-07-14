@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXPLORESABAH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>EXPLORESABAH</h1>
+    <nav>
+      <a href="home.html">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Place</button>
+        <div class="dropdown-content">
+          <a href="gunungkinabalu.html">Gunung Kinabalu</a>
+          <a href="pulausipadan.html">Pulau Sipadan</a>
+          <a href="pulaumabul.html">Pulau Mabul</a>
+          <a href="kundasanggg.html">Kundasang</a>
+          <a href="rafflesia.html">Rafflesia</a>
+          <a href="tanjungaru.html">Tanjung Aru</a>
+        </div>
+      </div>
+
+      <a href="aboutus.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="Food & Cuisine.html">Food</a>
+      <a href="traveltip.html">Tips</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="home/sabah.mp4" type="video/mp4">
+
+
+    </video>
+    <h2>SABAH,
+      NEGERI BAWAH BAYU .
+    </h2>
+  </section>
+
+
+  <section class="featured">
+    <center>
+      <h2>FEATURED LOCATIONS</h2>
+    </center>
+  </section>
+
+  <section class="product">
+    <div class="products">
+      <div class="product-card">
+        <img src="home/kk.jpg" onclick="openLightbox(this.src)">
+        <h4>GUNUNG KINABALU</h4>
+      </div>
+      <div class="product-card">
+        <img src="home/pulau sipadan.jpg" onclick="openLightbox(this.src)">
+        <h4>PULAU SIPADAN</h4>
+      </div>
+      <div class="product-card">
+        <img src="home/tanjung aru.jpg" onclick="openLightbox(this.src)">
+        <h4>TANJUNG ARU</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="home/pulau mabul.jpg" onclick="openLightbox(this.src)" alt="Sneaker">
+      <h4>PULAU MABUL</h4>
+    </div>
+    <div class="product-card">
+      <img src="home/kundasang.jpg" onclick="openLightbox(this.src)" alt="Jacket">
+      <h4>KUNDASANG</h4>
+    </div>
+    <div class="product-card">
+      <img src="home/RAFLESIA.JPG" onclick="openLightbox(this.src)" alt="Dress">
+      <h4>RAFFLESIA</h4>
+    </div>
+  </section>
+
+  <div class="info-box">
+    <p>
+      Sabah is a Malaysian state located on the northern part of Borneo, the third-largest island in the world. Bordered
+      by Sarawak to the southwest and Kalimantan (Indonesia) to the south, Sabah faces the South China Sea on its west
+      coast and the Sulu and Celebes Seas on the east. Known as the "Land Below the Wind" for its location just south of
+      the typhoon belt, Sabah is a land of geographic and ecological diversity.
+
+      The cultural fabric of Sabah is vibrant and deeply rooted in its more than 30 indigenous groups. Among them are
+      the Kadazan-Dusun, Bajau, Murut, Rungus, and many others, each preserving their own traditions, languages, and
+      customs. This cultural richness is celebrated in colorful festivals such as Kaamatan, the harvest festival, where
+      music, dance, and food bring communities together. Everyday life in Sabah reflects a peaceful coexistence of
+      various ethnicities and religions.
+
+      Sabah’s natural beauty is one of its most defining features. Towering above it all is Gunung Kinabalu, Malaysia’s
+      highest peak and a UNESCO World Heritage Site. Lush rainforests, pristine rivers, exotic wildlife, and some of the
+      world’s richest marine biodiversity make Sabah a paradise for nature lovers. Areas like Danum Valley, Kinabatangan
+      River, and Sipadan Island are internationally renowned for conservation and ecotourism.
+    </p>
+  </div>
+
+  <footer>
+    <div
+      style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; gap: 10px;">
+        <img src="home/SABAH FLAG.png" height="40" width="70">
+      </div>
+      <p style="flex: 1; text-align: center;">&copy; 2025 EXPLORESABAH. All rights reserved.</p>
+      <div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Popup image">
+    <script>
+      function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'flex';
+      }
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+    </script>
+</body>
+
+</html>

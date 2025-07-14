@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPLORESABAH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EXPLORESABAH</h1>
+        <nav>
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Place</button>
+                <div class="dropdown-content">
+                    <a href="gunungkinabalu.html">Gunung Kinabalu</a>
+                    <a href="pulausipadan.html">Pulau Sipadan</a>
+                    <a href="pulaumabul.html">Pulau Mabul</a>
+                    <a href="kundasanggg.html">Kundasang</a>
+                    <a href="rafflesia.html">Rafflesia</a>
+                    <a href="tanjungaru.html">Tanjung Aru</a>
+                </div>
+            </div>
+
+            <a href="aboutus.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Food & Cuisine.html">Food</a>
+            <a href="traveltip.html">Tips</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="pulaumabul/vid.mp4" type="video/mp4">
+
+
+        </video>
+        <h2>PULAU MABUL</h2>
+    </section>
+
+    <section class="featured">
+        <center>
+            <h2>CLOSE TO OCEAN</h2>
+        </center>
+    </section>
+    <section class="sipadan-sections">
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="pulaumabul/1.jpg" alt="Gunung Kinabalu" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+
+                            Pulau Mabul, or Mabul Island, is a small island located off the southeastern coast of Sabah,
+                            Malaysia, in the Celebes Sea. Just a 15-minute boat ride from the world-renowned diving spot
+                            Pulau Sipadan, Mabul is often considered a hidden gem in its own right. Though modest in
+                            size, this tropical island is bursting with natural beauty, making it a favorite destination
+                            for divers, nature lovers, and travelers seeking tranquility.
+
+
+                            Mabul is best known for its stunning underwater biodiversity. The surrounding waters are
+                            teeming with exotic marine life, especially macro species such as frogfish, pipefish,
+                            cuttlefish, blue-ringed octopuses, and various types of nudibranchs. These qualities make
+                            Mabul one of the top destinations in the world for muck diving—a type of diving that focuses
+                            on the tiny and unusual creatures found in sandy or muddy seafloors.<br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card reverse">
+                    <div class="image">
+                        <img src="pulaumabul/2.jpg" alt="Gunung Kinabalu" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            One of the most well-known legends tells the story of a Chinese princess who waited
+                            faithfully for her lover,
+                            a local warrior, to return from a sea voyage. Unfortunately, he never came back. The
+                            princess waited atop the
+                            mountain until her death, and her spirit is said to still dwell on the mountain. This
+                            romantic and tragic
+                            tale adds a mystical element to Mount Kinabalu.
+
+                            For the Kadazan-Dusun people, Mount Kinabalu is considered sacred. Every year, before major
+                            climbing expeditions,
+                            a ritual known as monolob is performed by a bobolian (a traditional priest or shaman). This
+                            ceremony involves the
+                            sacrifice of a chicken and prayers in an ancient dialect, seeking permission and protection
+                            from the mountain spirits.
+
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="pulaumabul/3.jpg" alt="Gunung Kinabalu" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Despite its remote location, Mabul offers a variety of accommodations—from budget homestays
+                            to luxurious water bungalows. Most resorts emphasize eco-friendly practices to help preserve
+                            the fragile ecosystem. The island lifestyle is peaceful and slow-paced, perfect for those
+                            looking to relax on soft sandy beaches, watch unforgettable sunsets, and disconnect from the
+                            fast-paced world.
+
+
+                            To reach Pulau Mabul, travelers typically fly into Tawau Airport, followed by a 90-minute
+                            drive to the coastal town of Semporna, and then a 45-minute boat ride to the island. It’s
+                            best to plan your trip during the dry season, from March to October, for optimal weather.
+                            Don’t forget your reef-safe sunscreen, underwater camera, and a sense of adventure—Mabul is
+                            an island that promises memories to last a lifetime.
+                            <br><br>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Popup image">
+    </div>
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+            <div class="slide-wrapper" id="slideWrapper">
+                <div class="slide"><img src="pulaumabul/1.jpg" alt="Resort"></div>
+                <div class="slide"><img src="pulaumabul/2.jpg" alt="Snorkeling"></div>
+                <div class="slide"><img src="pulaumabul/3.jpg" alt="Diving"></div>
+            </div>
+
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            document.getElementById('slideWrapper').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+    <div class="info-box">
+        <p>
+            Pulau Mabul, also known as Mabul Island, is a small but stunning island located off the southeastern coast
+            of Sabah,
+            Malaysia. It sits in the Celebes Sea, close to the world-famous diving destination, Pulau Sipadan. Although
+            smaller
+            and less known than its neighbor, Mabul has developed a reputation of its own for its unique blend of
+            natural
+            beauty, cultural richness, and marine biodiversity.
+        </p>
+    </div>
+
+
+
+    <div class="intro-page">
+        <a href="https://www.bing.com/maps?&ty=30&q=mabul%20island%20map&satid=id.sid%3Aeae301c7-de61-323d-0828-72734bd070a2&vdpid=7915179621887246337&mb=4.251814~118.622775~4.240087~118.639426&cardbg=%23F98745&dt=1752235200000&tt=Mabul%20Island%2C%20Sabah&tsts0=%2526ty%253D30%2526q%253Dmabul%252520island%252520map%2526satid%253Did.sid%25253Aeae301c7-de61-323d-0828-72734bd070a2%2526vdpid%253D7915179621887246337%2526mb%253D4.251814~118.622775~4.240087~118.639426%2526cardbg%253D%252523F98745%2526dt%253D1752235200000&tstt0=Mabul%20Island%2C%20Sabah&cp=4.245951~118.625779&lvl=16&pi=0&ftst=0&ftics=False&v=2&sV=2&form=S00027"
+            class="start-btn" target="_blank" rel="noopener noreferrer">
+            GO TO MAP
+        </a>
+    </div>
+
+
+
+    <footer>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; gap: 10px;">
+                <img src="home/SABAH FLAG.png" height="40" width="70">
+            </div>
+            <p style="flex: 1; text-align: center;">&copy; 2025 EXPLORESABAH. All rights reserved.</p>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

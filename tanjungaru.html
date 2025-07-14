@@ -1,0 +1,181 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPLORESABAH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EXPLORESABAH</h1>
+        <nav>
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Place</button>
+                <div class="dropdown-content">
+                    <a href="gunungkinabalu.html">Gunung Kinabalu</a>
+                    <a href="pulausipadan.html">Pulau Sipadan</a>
+                    <a href="pulaumabul.html">Pulau Mabul</a>
+                    <a href="kundasanggg.html">Kundasang</a>
+                    <a href="rafflesia.html">Rafflesia</a>
+                    <a href="tanjungaru.html">Tanjung Aru</a>
+                </div>
+            </div>
+
+            <a href="aboutus.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Food & Cuisine.html">Food</a>
+            <a href="traveltip.html">Tips</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="tanjungaru/vid.mp4" type="video/mp4" />
+        </video>
+        <h2>TANJUNG ARU</h2>
+    </section>
+
+
+    <section class="featured">
+        <center>
+            <h2>JUST VIBING</h2>
+        </center>
+    </section>
+
+
+    <section class="sipadan-sections">
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="tanjungaru/1.jpg" alt="Pulau Sipadan Resort" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Tanjung Aru Beach, located just a short drive from Kota Kinabalu city, is one of Sabah’s
+                            most iconic coastal destinations. This long stretch of soft sand and calm sea is especially
+                            famous for its breathtaking sunsets, drawing locals and tourists every evening to witness
+                            the golden hues as the sun dips below the horizon. The beach is lined with palm trees and
+                            open spaces, creating a perfect spot for relaxation, family picnics, or a leisurely walk.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card reverse">
+                    <div class="image">
+                        <img src="tanjungaru/2.JPG" alt="Snorkeling at Sipadan" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            In addition to its natural beauty, Tanjung Aru is also a hub for local street food and
+                            vibrant culture. Food stalls near the beach offer delicious snacks such as satay, grilled
+                            seafood, coconut shakes, and mango desserts. Visitors can also enjoy watching planes land at
+                            the nearby airport — a unique experience as aircraft fly low right over the beach, perfect
+                            for photography lovers.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="product">
+            <div class="products">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="tanjungaru/3.jpg" alt="Diving at Sipadan" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="text">
+                        <h4>
+                            Whether you're visiting for a quiet sunset, a taste of local flavors, or to simply enjoy the
+                            sea breeze, Tanjung Aru delivers a memorable coastal experience. It’s easily accessible by
+                            car, Grab, or public bus, making it a convenient stop for anyone exploring Kota Kinabalu and
+                            the nearby attractions.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Popup image">
+    </div>
+
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slide-wrapper" id="slideWrapper">
+                <div class="slide"><img src="tanjungaru/1.jpg" alt="Resort"></div>
+                <div class="slide"><img src="tanjungaru/2.JPG" alt="Snorkeling"></div>
+                <div class="slide"><img src="tanjungaru/3.jpg" alt="Diving"></div>
+            </div>
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <div class="info-box">
+        <p>
+            Tanjung Aru Beach is a popular coastal destination near Kota Kinabalu, Sabah, known for its stunning
+            sunsets, soft sands, and local food stalls. Just minutes from the city, it offers a relaxing atmosphere
+            perfect for evening strolls, family outings, and scenic views of planes landing nearby. With its unique
+            blend of natural beauty and cultural charm, Tanjung Aru is a must-visit spot for travelers exploring Sabah.
+        </p>
+    </div>
+
+    <div class="intro-page">
+        <a href="https://maps.app.goo.gl/qGsdwQ9aXvyaR7fc7" class="start-btn" target="_blank" rel="noopener noreferrer">
+            GO TO MAP
+        </a>
+    </div>
+
+
+    <footer>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; gap: 10px;">
+                <img src="home/SABAH FLAG.png" height="40" width="70">
+            </div>
+            <p style="flex: 1; text-align: center;">&copy; 2025 EXPLORESABAH. All rights reserved.</p>
+            <div></div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Lightbox
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            document.getElementById('slideWrapper').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+</body>
+
+</html>
