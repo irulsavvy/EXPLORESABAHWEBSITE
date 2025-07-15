@@ -268,13 +268,11 @@ footer {
 
 .product-card.reverse {
   flex-direction: row;
-  /* Force image left */
 }
 
 @media (max-width: 768px) {
   .product-card.reverse {
     flex-direction: column;
-    /* Stack on small screens */
   }
 }
 
